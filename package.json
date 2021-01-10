@@ -4,5 +4,8 @@
   "description": "Cloning Youtube with Vanilla And NodeJs",
   "main": "index.js",
   "author": "Taehyeong Park",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts":{
+    "start": "node index.js"
+  }
 }
