@@ -1,10 +1,29 @@
-const express = require('express');
+import "core-js";
+import express from "express";
+import { nextTick } from "process";
 const app = express();
 
 const PORT = 4000;
 
-function handleListening(){
+const handleListening = () => {
     console.log(`Listening on: http://localhost:${PORT}`);
 }
+
+const handleHome = (req, res) => {
+    res.send("Hello from home!!");
+}
+
+const handleProfile = (req, res) => {
+    res.send("You are on my profile!!!!");
+}
+
+const betweenHome = (req, res, next) => {
+    console.log("I'm between")
+    next();
+}
+
+app.get('/', betweenHome, handleHome);
+
+app.get('/profile', handleProfile);
 
 app.listen(4000, handleListening);

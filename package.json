@@ -5,7 +5,17 @@
   "main": "index.js",
   "author": "Taehyeong Park",
   "license": "ISC",
-  "scripts":{
-    "start": "node index.js"
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "core-js": "^3.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
