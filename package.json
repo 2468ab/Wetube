@@ -1,0 +1,8 @@
+{
+  "name": "youtube_clone",
+  "version": "1.0.0",
+  "description": "Cloning Youtube with Vanilla And NodeJs",
+  "main": "index.js",
+  "author": "Taehyeong Park",
+  "license": "ISC"
+}
